@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+body{
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.left {
+  display: flex;
+}
+
+.top {
+  padding: 15px;
+  width: 420px;
+  height: 90px;
+}
+
+.search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  color: white;
+  margin: 10px 0;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.chat:hover {
+  background: #2a2a2a;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-info {
+  flex: 1;
+}
+
+.name {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.last-msg {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.time {
+  color: #888;
+  font-size: 12px;
+}
+.chat{
+  display: flex;
+  gap: 20px;
+}
+
+</style>
+<body>
+<div class="left">
+  <img src="images/left-side.png" width="65px" height="800px">
+
+  <div class="top">
+    <div class="chat" style="color: white;display: flex; gap: 230px;">
+      <h2>Чаты</h2>
+      <img class="but" src="images/iconic.png" width="60px">
+    </div>
+
+    <input type="text" placeholder="Поиск" class="search">
+
+    <div class="filters">
+      <button>Все</button>
+      <button>Непрочитанные</button>
+      <button>Избранное</button>
+    </div>
+     <div class="chats">
+  <div class="chat">
+  <img src="images/1.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">Зейнепп 💕</div>
+    <div class="last-msg"> Стикер</div>
+  </div>
+  <div class="time">Вчера</div>
+</div>
+
+  <div class="chat">
+  <img src="images/2.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">zarina</div>
+    <div class="last-msg">ахааа</div>
+  </div>
+  <div class="time">Вчера</div>
+</div>
+
+  <div class="chat">
+  <img src="images/3.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">❤️‍🔥❤️‍🔥❤️‍🔥</div>
+    <div class="last-msg">Аяу🤍:🤣</div>
+  </div>
+  <div class="time">21:51</div>
+</div>
+
+  <div class="chat">
+  <img src="images/4.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">Munchiktar❤️</div>
+    <div class="last-msg">Инкар абла:Комнатаны қашан жинай...</div>
+  </div>
+  <div class="time">21:40</div>
+</div>
+
+  <div class="chat">
+  <img src="images/5.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">2f1 students</div>
+    <div class="last-msg">~dilya:Инглиш болды</div>
+  </div>
+  <div class="time">пятница</div>
+</div>
+
+  <div class="chat">
+  <img src="images/6.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">Айнара🤍</div>
+    <div class="last-msg">Стикер</div>
+  </div>
+  <div class="time">четверг</div>
+</div>
+
+  <div class="chat">
+  <img src="images/7.png" class="avatar">
+  <div class="chat-info">
+    <div class="name">Отбасы❤️🫶</div>
+    <div class="last-msg">апа:Стикер</div>
+  </div>
+  <div class="time">четверг</div>
+</div>
+  </div>
+  </div>
+   <div
+      class="appear_box p-3 border-zinc-700 border-2 rounded-[10px] absolute z-2 top-15 left-100 justify-start bg-black flex flex-col gap-5"
+    >
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-zinc-700 rounded-[10px]"
+      >
+        
+        <p class="text-white">New group</p>
+      </div>
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-zinc-700 rounded-[10px]"
+      >
+        <p class="text-white">Starred messages</p>
+      </div>
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-zinc-700 rounded-[10px]"
+      >
+        <p class="text-white">Select Chats</p>
+      </div>
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-zinc-700 rounded-[10px]"
+      >
+       
+        <p class="text-white">Mark all as read</p>
+      </div>
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-zinc-700 rounded-[10px]"
+      >
+       
+        <p class="text-white">App Lock</p>
+      </div>
+      <div
+        class="ap flex gap-3 justify-start items-center hover:bg-red-900 rounded-[10px]"
+      >
+        
+        <p class="text-white">Log out</p>
+      </div>
+    </div>
+</div>
+<script>
+      const appear_box = document.querySelector(".appear_box");
+      const  but = document.querySelector(".but");
+
+      but.addEventListener("click", function () {
+        if (appear_box.style.display === "block") {
+          appear_box.style.display = "none";
+        } else {
+          appear_box.style.display = "block";
+        }
+      });
+    </script>
+</body>
+</html>
